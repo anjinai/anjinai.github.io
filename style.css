@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,600;1,800;1,900&display=swap");
+
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0px;
+  background-color: #fbfcfb;
+  background-image: url(https://lh3.googleusercontent.com/proxy/cRP4Vmg6-I-uhM-glmzGKGuI5_WSsuZRH8wN_ut0oFVRdj0mk9dT_6GQ3ZvJs4Phu5BGNBUm9ZJByjWgm7KJDd2DYsUVxboXS11BlL2rec7Lxvvsx11g1wmnapMYrbwjmVXzF-Sn);
+  background-size: cover;
 }
 .column-container {
   display: flex;
@@ -19,6 +24,26 @@ body {
   align-items: center;
 }
 
+#game-title {
+  color: #302e28;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+#message-to-users {
+  color: #302e28;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+#rules {
+  color: #302e28;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .container {
   width: 100%;
   height: calc(100vh - 40px);
@@ -32,24 +57,37 @@ body {
   justify-content: center;
 }
 
+.container.right {
+  color: #302e28;
+  font-family: "Playfair Display", serif;
+}
+
 .column-header {
+  color: #302e28;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
   font-size: 25px;
   position: relative;
-  background-color: white;
+  padding: 2%;
   top: 8px;
 }
 #big_coffee {
   user-select: none;
-  font-size: 128px;
+  font-size: 250px;
   cursor: pointer;
 }
 
 .counter-container {
+  color: #302e28;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
   font-size: 30px;
   margin: 10px;
 }
 
 .cps-container {
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
   font-size: 20px;
 }
 

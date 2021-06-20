@@ -205,6 +205,13 @@ function tick(data) {
   renderProducers(data);
 }
 
+// Change Start Message from "To Start: Click Coffee Cup" to "Keep Clicking" upon first click of Coffee Cup.
+
+function changeStartMessage() {
+  const messageToUsers = document.getElementById("message-to-users");
+  messageToUsers.innerText = "Keep Clicking!  Click Your Heart Out!";
+}
+
 /*************************
  *  Start your engines!
  *************************/
@@ -226,7 +233,10 @@ if (typeof process === "undefined") {
 
   // Add an event listener to the giant coffee emoji
   const bigCoffee = document.getElementById("big_coffee");
-  bigCoffee.addEventListener("click", () => clickCoffee(data));
+  bigCoffee.addEventListener("click", () => {
+    clickCoffee(data);
+    changeStartMessage();
+  });
 
   // Add an event listener to the container that holds all of the producers
   // Pass in the browser event and our data object to the event listener
